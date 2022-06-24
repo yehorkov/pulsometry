@@ -7,4 +7,38 @@
             align-items: center;
         }
     }
+    .consultation {
+        .title {
+            text-align: center;
+        }
+        &__descr {
+            text-align: center;
+        }
+        .feed-form {
+            margin: 36px auto 0;
+        }
+    }
+}
+@media (max-width: 1023px) {
+    .carousel {
+        &__inner {
+            img {
+                display: block;
+                margin: 0 auto;
+                width: 50%;
+            }
+        }
+    }
+    .review {
+        &__item {
+            padding: 0 30px;
+        }
+        &__item > &__descr {
+            margin-left: 40px;
+        }
+        &__item > &__descr > &__comment {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
 }
