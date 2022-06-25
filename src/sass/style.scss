@@ -2,7 +2,6 @@
 @import 'blocks/promo';
 @import 'blocks/header.scss';
 @import 'blocks/buttons';
-@import 'base/media';
 @import 'blocks/benefits';
 @import 'blocks/title';
 @import 'blocks/consultation';
@@ -10,6 +9,8 @@
 @import 'blocks/carousel';
 @import 'blocks/catalog';
 @import 'blocks/review';
+@import 'blocks/footer';
+@import 'base/media';
 
 
 * {
@@ -18,4 +19,12 @@
 .container {
     max-width: 950px;
     margin: 0 auto;
+}
+
+footer {
+    iframe {
+        .place-card-large {
+            display: none;
+    }
+    }
 }
