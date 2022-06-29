@@ -1,3 +1,4 @@
+//slider on site
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 1200,
@@ -51,7 +52,7 @@ $(document).ready(function(){
       });
 
       //validate form
-      
+
       function validateForms (form) {
         $(form).validate({
           rules: {
@@ -82,4 +83,7 @@ $(document).ready(function(){
       validateForms('#consultation-form');
       validateForms('#consultation form');
       validateForms('#order form');
+
+      //mask phone
+      $('input[name=phone]').mask("+7 (999) 999-99-99");
   });
