@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -59,18 +60,18 @@
         <div class="container">
             <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
             <div class="benefits__wrapper">
-                <div class="benefits__icons">
-                    <img src="img/icons/second_1.png" alt="Icon" class="benefits_icon">
+                <div class="benefits__item">
+                    <img src="img/icons/second_1.png" alt="Cup" class="benefits__icon">
                         <div class="benefits__subtitle">Делимся опытом</div>
                         <div class="benefits__text">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
-                <div class="benefits__icons">
-                    <img src="img/icons/second_2.png" alt="Icon" class="benefits_icon">
+                <div class="benefits__item">
+                    <img src="img/icons/second_2.png" alt="Heart" class="benefits__icon benefits__icon_animated">
                         <div class="benefits__subtitle">Заботимся о здоровье</div>
                         <div class="benefits__text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
                 </div>
-                <div class="benefits__icons">
-                    <img src="img/icons/second_3.png" alt="Icon" class="benefits_icon">
+                <div class="benefits__item">
+                    <img src="img/icons/second_3.png" alt="Shoe" class="benefits__icon">
                         <div class="benefits__subtitle">Учим бегать</div>
                         <div class="benefits__text">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в <sub>р</sub>оссии - <a href="#">I LOVE RUNNING.</a></div>
                 </div>
@@ -365,7 +366,7 @@
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
 
-                    <div class="review__item">
+                    <div class="review__item fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.5s">
                     <img src="img/reviews/review_1.jpg" alt="Image" class="rewiev-item__img">
                     <div class="review__descr">
                         <div class="review__name">Ирина Иванченко</div>
@@ -373,7 +374,7 @@
                         <div class="review__comment">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали<br>пульсометр, который подошёл именно под мои цели и финансовые возможности.<br>Через некоторое время решила обновить гаджет - не раздумывая обратилась туда<br>же.<br><br>Новые цели - новый гаджет!<br><br>Спасибо, RunSmart!</div>
                     </div>
                 </div>
-                <div class="review__item">
+                <div class="review__item fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.5s">
                     <img src="img/reviews/review_2.jpg" alt="Image" class="rewiev-item__img">
                     <div class="review__descr">
                         <div class="review__name">Иван Сёмочкин</div>
@@ -381,7 +382,7 @@
                         <div class="review__comment">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе<br>делал.<br>Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели<br>первую тренировку, научили пользоваться новым гаджетом. Также объяснили<br>основы анатомии, составили план тренировок на месяц вперёд.<br><br>С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
                 </div>
                 </div>
-                <div class="review__item">
+                <div class="review__item fadeInUp wow" data-wow-duration="1s" data-wow-delay="0.5s">
                     <img src="img/reviews/review_3.jpg" alt="Image" class="rewiev-item__img">
                     <div class="review__descr">
                         <div class="review__name">Юлия Дашкина</div>
@@ -432,7 +433,7 @@
                 <button class="button button_submit">купить</button>
             </form>
         </div>
-
+        
         <div class="modal modal_mini" id="thanks">
             <div class="modal__close">&times;</div>
             <div class="modal__subtitle">Спасибо за вашу заявку!</div>
@@ -441,11 +442,16 @@
 
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="img/icons/up_arrow.svg" alt="up">
+    </a>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
