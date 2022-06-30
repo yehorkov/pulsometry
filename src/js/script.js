@@ -86,4 +86,24 @@ $(document).ready(function(){
 
       //mask phone
       $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+      //отправка данных на почту
+      $('form').submit(function (e) {
+        e.preventDefault();
+        if (!$(this).valid()) {    //если форма была незаполнена, не отправляет данные
+          return;
+        }
+        $.ajax({
+          type: "POST",
+          url: "mailer/smart.php",
+          data: $(this).serialize()
+      }).done(function() {
+          $(this).find("input").val("");
+          $('#consultation, #order').fadeOut();
+          $('.overlay, #thanks').fadeIn('slow');
+
+          $('form').trigger('reset');
+      });
+      return false;
+  });
   });
