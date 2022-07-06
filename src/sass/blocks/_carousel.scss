@@ -2,7 +2,7 @@
     padding: 81px 0;
     &__inner {
         position: relative;
-        width: 750px;
+        max-width: 750px;
         margin: 0 auto;
     }
     .slick-prev, .slick-next {
@@ -21,5 +21,27 @@
     .slick-next {
         right: -66px;
         left: auto;
+    }
+    .slick-dots {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            list-style: none;
+            margin: 0px 10px;
+            button {
+                font-size: 0;
+                width: 15px;
+                height: 15px;
+                background-color: rgba(255, 0, 0, 0.8);
+                border-radius: 100%;
+                border: none;
+            }
+        }
+        .slick-active button {
+            border: 2px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px black;
+        }
     }
 }

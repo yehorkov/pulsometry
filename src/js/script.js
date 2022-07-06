@@ -5,6 +5,8 @@ $(document).ready(function(){
         /* adaptiveHeight: true, */
         prevArrow: '<button type="button" class="slick-prev"><img src="img/slider/prev_arrow.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/slider/next_arrow.png"></button>',
+        autoplay: true,
+        autoplaySpeed: 1500,
         responsive: [
             {
                 breakpoint: 992,
@@ -12,7 +14,7 @@ $(document).ready(function(){
                   dots: true,
                   arrows: false
                 }
-            },
+            }
         ]
       });
 
@@ -110,7 +112,7 @@ $(document).ready(function(){
   //стрелка скрола вверх pageup
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > 1600) {
+    if ($(this).scrollTop() > 500) {
       $('.pageup').fadeIn();
     } else {
       $('.pageup').fadeOut();
