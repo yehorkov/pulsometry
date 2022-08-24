@@ -198,9 +198,6 @@
         &__item {
             display: flex;
             flex-direction: column;
-            img {
-                transform: translateX(10%);
-            }
         }
         &__name {
             margin-top: 15px;
@@ -211,6 +208,7 @@
         }
         &__comment {
             text-align: center;
+            font-size: 16px;
             line-height: 19px;
         }
     }
